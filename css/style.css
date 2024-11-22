@@ -310,6 +310,12 @@ header {
     position: relative;
     z-index: -1000;
 }
+.logo-img {
+    width: 40px;
+}
+.logo-img2 {
+    width: 100px;
+}
 
 #header {
     z-index: 999999999999999999999999;
