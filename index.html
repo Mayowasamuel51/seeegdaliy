@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/lightbox.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!--style sheet-->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -75,6 +76,10 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav flex-grow-1 p-4">
                 <li class="nav-item">
+                  <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Home
+                  </a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="about.html">About
                   </a>
                 </li>
@@ -83,7 +88,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Books
+                  <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Learn
                   </a>
                 </li>
               </ul>
@@ -92,9 +97,12 @@
         </div>
         <div id="header" class="desktop-nav d-none d-lg-flex align-items-center justify-content-between p-3">
           <a href="">
-            <h3 class="font-black">LOGO</h3>
+            <h3 class="font-black">SEEEGDAILY</h3>
           </a>
           <ul class="d-flex gap-5">
+            <a href="index.html">
+              <li class="font-bold active">Home</li>
+            </a>
             <a href="about.html">
               <li class="font-bold">About</li>
             </a>
@@ -102,62 +110,26 @@
               <li class="font-bold">Resources</li>
             </a>
             <a href="">
-              <li class="font-bold">Books</li>
+              <li class="font-bold">Learn</li>
             </a>
           </ul>
         </div>
-        <!-- <div class="row text-uppercase bg-black rounded-4 p-3 mt-5">
-          <div class="col-md-3">
-            <div class="d-flex align-items-center gap-4">
-              <h2 class="display-2 text-light">
-                12
-              </h2>
-              <p class="text-light-emphasis justify-content-center m-0 ls-4">
-                Years of <br> experience
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="d-flex align-items-center gap-4">
-              <h2 class="display-2 text-light">
-                820
-              </h2>
-              <p class="text-light-emphasis justify-content-center m-0 ls-4">
-                satisfied <br> clients
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="d-flex align-items-center gap-4">
-              <h2 class="display-2 text-light">
-                720
-              </h2>
-              <p class="text-light-emphasis justify-content-center m-0 ls-4">
-                employees <br> worldwide
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="d-flex align-items-center gap-4">
-              <h2 class="display-2 text-light">
-                2200
-              </h2>
-              <p class="text-light-emphasis justify-content-center m-0 ls-4">
-                projects completed
-              </p>
-            </div>
-          </div>
-        </div> -->
+      </nav>
+    </header>
+    <section class="landing-section">
+      <div class="text-center d-flex flex-column gap-lg-3 gap-1">
+        <h1 data-aos="fade-up" class="font-bold text-white">SEEEGS DAILY<br />Purpose</h1>
+        <p class="font-regular">Fostering daily growth</p>
       </div>
     </section>
   </main>
 
   <section class="resources py-5">
     <div class="">
-      <h1 class="font-bold fs-1 w-75 w-lg-50 mx-auto text-center py-5">Reaching a New Generation with a Message of Hope
+      <h1 data-aos="fade-up" class="font-bold fs-1 w-75 w-lg-50 mx-auto text-center py-5">Reaching a New Generation with a Message of Hope
       </h1>
     </div>
-    <div class="p-5">
+    <div data-aos="fade-up" class="p-5">
       <div>
         <h2>Resources for Spiritual Growth</h2>
         <p class="font-medium fs-5">SEEEG Daily provides a wide range of resources for individuals seeking a deeper
@@ -171,22 +143,22 @@
 
   <section class="journey py-5">
     <div class="d-flex align-items-center flex-lg-row flex-column">
-      <div class="flex-grow-1 d-flex flex-column gap-2 p-lg-5 p-3">
+      <div data-aos="fade-right" class="flex-grow-1 d-flex flex-column gap-2 p-lg-5 p-4">
         <h1 class="font-black">Our Journey</h1>
         <p class="font-regular">Discover how SEEEG Daily has been empowering individuals to grow spiritually and strengthening their faith in Christ.</p>
-        <button class="font-bold">About Us</button>
+        <a href="about.html"><button class="font-bold">About Us</button></a>
       </div>
-      <div class="flex-grow-1">
+      <div data-aos="fade-left" class="flex-grow-1">
         <img src="./images/our-journey.png" alt="" class="w-100">
       </div>
     </div>
   </section>
 
   <section class="py-5">
-    <div class="py-5">
+    <div data-aos="fade-left" class="py-5">
       <div class="swiper book-swiper">
         <div class="swiper-wrapper book-slider">
-          <div class="book-card swiper-slide">
+          <div class="book-card swiper-slide book-1">
             <div class="py-4 px-4 text-center">
               <h2>Bible Study Guides</h2>
               <p class="font-regular">Delve into our comprehensive Bible study guides, tailored to help you understand
@@ -194,7 +166,7 @@
             </div>
             <img src="./images/bible-study-guide.png" alt="">
           </div>
-          <div class="book-card swiper-slide">
+          <div class="book-card swiper-slide book-2">
             <div class="py-4 px-4 text-center">
               <h2>Devotional Books</h2>
               <p class="font-regular">Immerse yourself in our devotional books, crafted to deepen your connection with
@@ -202,7 +174,7 @@
             </div>
             <img src="./images/devotional-books.png" alt="">
           </div>
-          <div class="book-card swiper-slide">
+          <div class="book-card swiper-slide book-3">
             <div class="py-4 px-4 text-center">
               <h2>Prayer Workshops</h2>
               <p class="font-regular">Participate in our prayer workshops and discover the transformative power of
@@ -210,7 +182,7 @@
             </div>
             <img src="./images/prayer-workshop.png" alt="">
           </div>
-          <div class="book-card swiper-slide">
+          <div class="book-card swiper-slide book-4">
             <div class="py-4 px-4 text-center">
               <h2>Community Events</h2>
               <p class="font-regular">Join us in our community events to connect with fellow believers and grow together
@@ -218,7 +190,7 @@
             </div>
             <img src="./images/community-events.png" alt="">
           </div>
-          <div class="book-card swiper-slide">
+          <div class="book-card swiper-slide book-1">
             <div class="py-4 px-4 text-center">
               <h2>Bible Study Guides</h2>
               <p class="font-regular">Delve into our comprehensive Bible study guides, tailored to help you understand
@@ -226,7 +198,7 @@
             </div>
             <img src="./images/bible-study-guide.png" alt="">
           </div>
-          <div class="book-card swiper-slide">
+          <div class="book-card swiper-slide book-2">
             <div class="py-4 px-4 text-center">
               <h2>Devotional Books</h2>
               <p class="font-regular">Immerse yourself in our devotional books, crafted to deepen your connection with
@@ -234,7 +206,7 @@
             </div>
             <img src="./images/devotional-books.png" alt="">
           </div>
-          <div class="book-card swiper-slide">
+          <div class="book-card swiper-slide book-3">
             <div class="py-4 px-4 text-center">
               <h2>Prayer Workshops</h2>
               <p class="font-regular">Participate in our prayer workshops and discover the transformative power of
@@ -242,7 +214,7 @@
             </div>
             <img src="./images/prayer-workshop.png" alt="">
           </div>
-          <div class="book-card swiper-slide">
+          <div class="book-card swiper-slide book-4">
             <div class="py-4 px-4 text-center">
               <h2>Community Events</h2>
               <p class="font-regular">Join us in our community events to connect with fellow believers and grow together
@@ -256,19 +228,19 @@
   </section>
 
   <section class="focus-area">
-    <h1 class="font-bold">Focus Area</h1>
+    <h1 data-aos="fade-right" class="font-bold">Focus Area</h1>
     <div class="d-flex flex-lg-row flex-column align-items-center p-4 p-lg-5">
-      <div class="flex-grow-1 p-3 p-lg-5">
+      <div data-aos="fade-up" class="flex-grow-1 p-3 p-lg-5">
         <h2 class="font-bold">Prayers</h2>
         <p class="lh-lg">Discover the transformative power of prayer and how it can strengthen your relationship with
           Christ.</p>
       </div>
-      <div class="flex-grow-1 p-3 p-lg-5">
+      <div data-aos="fade-up" data-aos-delay="100"   class="flex-grow-1 p-3 p-lg-5">
         <h2>Bible Study</h2>
         <p class="lh-lg">Immerse yourself in the simplicity and depth of God's Word through our comprehensive study
           programs</p>
       </div>
-      <div class="flex-grow-1 p-3 p-lg-5">
+      <div data-aos="fade-up" data-aos-delay="200" class="flex-grow-1 p-3 p-lg-5">
         <h2>Fellowship</h2>
         <p class="lh-lg">Connect with a community of believers to support and encourage each other in your spiritual
           journey</p>
@@ -278,12 +250,12 @@
 
   <footer>
     <div>
-      <div>
+      <div data-aos="fade-up">
         <a href="index.html">
-          <h1 class="font-bold fs-4 text-white">LOGO</h1>
+          <h1 class="font-bold fs-4 text-white">SEEEGDAILY</h1>
         </a>
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-delay="100">
         <ul class="navbar-nav flex-grow-1">
           <li class="nav-item">
             <a class="nav-link ls-4 text-white" aria-current="page" href="about.html">About
@@ -298,12 +270,16 @@
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link ls-4 text-white" aria-current="page" href="index.html">Learn
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link ls-4 text-white" aria-current="page" href="index.html">Contact
             </a>
           </li>
         </ul>
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-delay="200">
         <ul class="navbar-nav flex-grow-1 lh-lg">
           <li class="nav-item">
             +24456780976
@@ -316,7 +292,7 @@
           </li>
         </ul>
       </div>
-      <div class="fs-2">
+      <div data-aos="fade-up" data-aos-delay="300" class="fs-2">
         <i class="fa-brands fa-youtube"></i>
         <i class="fa-brands fa-linkedin"></i>
         <i class="fa-brands fa-instagram"></i>
@@ -345,8 +321,30 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/plugins.js"></script>
   <script type="text/javascript" src="js/lightbox.min.js"></script>
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>  
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    AOS.init({
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 400, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: true, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom',
+  });
+  </script>
 </body>
 
 </html>

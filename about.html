@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/lightbox.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--style sheet-->
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -54,8 +55,8 @@
         <header id="top" class="">
             <nav class="fixed-top">
                 <div class="container-fluid">
-                    <button class="navbar-toggler border-0 d-lg-none d-block bg-white rounded-3 p-1" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <button class="navbar-toggler border-0 d-lg-none d-block bg-white rounded-3 p-1" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <span class="navabar-toggler-icon">
                             <svg class="text-primary menu" width="32" height="32">
                                 <use xlink:href="#menu"></use>
@@ -72,6 +73,11 @@
                             <ul class="navbar-nav flex-grow-1 p-4">
                                 <li class="nav-item">
                                     <a class="nav-link text-uppercase ls-4 text-white" aria-current="page"
+                                        href="index.html">Home
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase ls-4 text-white" aria-current="page"
                                         href="about.html">About
                                     </a>
                                 </li>
@@ -82,7 +88,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-uppercase ls-4 text-white" aria-current="page"
-                                        href="index.html">Books
+                                        href="index.html">Learn
                                     </a>
                                 </li>
                             </ul>
@@ -91,9 +97,12 @@
                 </div>
                 <div id="header" class="desktop-nav d-none d-lg-flex align-items-center justify-content-between p-3">
                     <a href="index.html">
-                        <h3 class="font-black">LOGO</h3>
+                        <h3 class="font-black">SEEEGDAILY</h3>
                     </a>
                     <ul class="d-flex gap-5">
+                        <a href="index.html">
+                            <li class="font-bold">Home</li>
+                        </a>
                         <a href="about.html">
                             <li class="font-bold active">About</li>
                         </a>
@@ -108,77 +117,85 @@
             </nav>
         </header>
         <section class="landing-section">
-            <div class="text-center d-flex flex-column gap-lg-3 gap-1">
+            <div data-aos="fade-up" data-aos-delay="400" class="text-center d-flex flex-column gap-lg-3 gap-1">
                 <h1 class="font-bold text-white">About Us</h1>
                 <p class="font-regular">Fostering daily growth</p>
             </div>
         </section>
     </main>
     <section class="">
-        <div class="">
+        <div class="" data-aos="fade-left">
             <div class="swiper book-swiper">
                 <div class="swiper-wrapper book-slider">
-                    <div class="book-card swiper-slide">
+                    <div class="book-card swiper-slide book-1">
                         <div class="py-4 px-4 text-center">
                             <h2>Bible Study Guides</h2>
                             <p class="font-regular">Delve into our comprehensive Bible study guides, tailored to help
-                                you understand and apply God's Word in your life.</p>
+                                you understand
+                                and apply God's Word in your life.</p>
                         </div>
                         <img src="./images/bible-study-guide.png" alt="">
                     </div>
-                    <div class="book-card swiper-slide">
+                    <div class="book-card swiper-slide book-2">
                         <div class="py-4 px-4 text-center">
                             <h2>Devotional Books</h2>
                             <p class="font-regular">Immerse yourself in our devotional books, crafted to deepen your
-                                connection with Christ and His Word.</p>
+                                connection with
+                                Christ and His Word.</p>
                         </div>
                         <img src="./images/devotional-books.png" alt="">
                     </div>
-                    <div class="book-card swiper-slide">
+                    <div class="book-card swiper-slide book-3">
                         <div class="py-4 px-4 text-center">
                             <h2>Prayer Workshops</h2>
                             <p class="font-regular">Participate in our prayer workshops and discover the transformative
-                                power of prayer in your spiritual journey.</p>
+                                power of
+                                prayer in your spiritual journey.</p>
                         </div>
                         <img src="./images/prayer-workshop.png" alt="">
                     </div>
-                    <div class="book-card swiper-slide">
+                    <div class="book-card swiper-slide book-4">
                         <div class="py-4 px-4 text-center">
                             <h2>Community Events</h2>
                             <p class="font-regular">Join us in our community events to connect with fellow believers and
-                                grow together in faith.</p>
+                                grow together
+                                in faith.</p>
                         </div>
                         <img src="./images/community-events.png" alt="">
                     </div>
-                    <div class="book-card swiper-slide">
+                    <div class="book-card swiper-slide book-1">
                         <div class="py-4 px-4 text-center">
                             <h2>Bible Study Guides</h2>
                             <p class="font-regular">Delve into our comprehensive Bible study guides, tailored to help
-                                you understand and apply God's Word in your life.</p>
+                                you understand
+                                and apply God's Word in your life.</p>
                         </div>
                         <img src="./images/bible-study-guide.png" alt="">
                     </div>
-                    <div class="book-card swiper-slide">
+                    <div class="book-card swiper-slide book-2">
                         <div class="py-4 px-4 text-center">
                             <h2>Devotional Books</h2>
                             <p class="font-regular">Immerse yourself in our devotional books, crafted to deepen your
-                                connection with Christ and His Word.</p>
+                                connection with
+                                Christ and His Word.</p>
                         </div>
                         <img src="./images/devotional-books.png" alt="">
                     </div>
-                    <div class="book-card swiper-slide">
+                    <div class="book-card swiper-slide book-3">
                         <div class="py-4 px-4 text-center">
                             <h2>Prayer Workshops</h2>
                             <p class="font-regular">Participate in our prayer workshops and discover the transformative
-                                power of prayer in your spiritual journey.</p>
+                                power of
+                                prayer in your spiritual journey.</p>
                         </div>
                         <img src="./images/prayer-workshop.png" alt="">
                     </div>
-                    <div class="book-card swiper-slide">
+                    <div class="book-card swiper-slide book-4">
                         <div class="py-4 px-4 text-center">
                             <h2>Community Events</h2>
                             <p class="font-regular">Join us in our community events to connect with fellow believers and
-                                grow together in faith.</p>
+                                grow together
+                                in faith.</p>
                         </div>
                         <img src="./images/community-events.png" alt="">
                     </div>
@@ -190,59 +207,68 @@
     <section class="mission-vision">
         <div class="d-flex flex-column gap-5">
             <div>
-                <h1 class="font-bold">Our Mission</h1>
-                <p>SEEEG is a vibrant online community where Christians unite, inspiring growth, spiritual enrichment,
+                <h1 data-aos="fade-right" class="font-bold">Our Mission</h1>
+                <p data-aos="fade-right" data-aos-delay="100">SEEEG is a vibrant online community where Christians
+                    unite, inspiring growth, spiritual enrichment,
                     and fellowship. Our mission is to empower believers through prayer, Bible study, devotionals, and
                     inspirational resources.</p>
             </div>
             <div>
-                <h1 class="font-bold">Our Vision</h1>
-                <p><b>Seek:</b> Explore scripture, ask questions and deepen their faith.</p>
-                <p><b>Grow:</b> Develop spiritually through insightful teachings and discussions.</p>
-                <p><b>Connect:</b> Foster meaningful relationships and supportive networks.</p>
-                <p><b>Serve:</b> Impact their communities and the world.</p>
+                <h1 data-aos="fade-right" class="font-bold">Our Vision</h1>
+                <p data-aos="fade-down"><b>Seek:</b> Explore scripture, ask questions and deepen their faith.</p>
+                <p data-aos="fade-down" data-aos-delay="100"><b>Grow:</b> Develop spiritually through insightful
+                    teachings and discussions.</p>
+                <p data-aos="fade-down" data-aos-delay="200"><b>Connect:</b> Foster meaningful relationships and
+                    supportive networks.</p>
+                <p data-aos="fade-down" data-aos-delay="300"><b>Serve:</b> Impact their communities and the world.</p>
             </div>
         </div>
     </section>
 
     <section class="subscribe">
-        <div></div>
+        <div data-aos="">
+            <iframe class="w-100 h-100" src="https://www.youtube.com/embed/viOMJeCV_Lg?si=x-iRr1glZh5iOMLG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
         <div>
-            <h1 class="font-bold">Subscribe</h1>
-            <p>Stay updated on inspiring content, events and community news.
+            <h1 data-aos="fade-right" class="font-bold">Subscribe</h1>
+            <p data-aos="fade-right" data-aos-delay="100">Stay updated on inspiring content, events and community news.
                 Let's grow together in faith!</p>
-            <button>Subscribe</button>
+            <a href="https://www.youtube.com/watch?v=viOMJeCV_Lg&ab_channel=SEEEGDAILY"><button>Subscribe</button></a>
         </div>
     </section>
 
     <footer>
         <div>
-            <div>
+            <div data-aos="fade-up">
                 <a href="index.html">
-                    <h1 class="font-bold fs-4 text-white">LOGO</h1>
+                    <h1 class="font-bold fs-4 text-white">SEEEGDAILY</h1>
                 </a>
             </div>
-            <div>
-                <ul class="footer-nav navbar-nav flex-grow-1">
-                    <li class="nav-item active">
-                        <a class="nav-link ls-4" aria-current="page" href="about.html">About
+            <div data-aos="fade-up" data-aos-delay="100">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link ls-4 text-white" aria-current="page" href="about.html">About
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ls-4" aria-current="page" href="resources.html">Resources
+                        <a class="nav-link ls-4 text-white" aria-current="page" href="resources.html">Resources
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ls-4" aria-current="page" href="index.html">Books
+                        <a class="nav-link ls-4 text-white" aria-current="page" href="index.html">Books
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ls-4" aria-current="page" href="index.html">Contact
+                        <a class="nav-link ls-4 text-white" aria-current="page" href="index.html">Learn
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ls-4 text-white" aria-current="page" href="index.html">Contact
                         </a>
                     </li>
                 </ul>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="200">
                 <ul class="navbar-nav flex-grow-1 lh-lg">
                     <li class="nav-item">
                         +24456780976
@@ -255,7 +281,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="fs-2">
+            <div data-aos="fade-up" data-aos-delay="300" class="fs-2">
                 <i class="fa-brands fa-youtube"></i>
                 <i class="fa-brands fa-linkedin"></i>
                 <i class="fa-brands fa-instagram"></i>
@@ -287,7 +313,29 @@
     <script type="text/javascript" src="js/lightbox.min.js"></script>
 
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        AOS.init({
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom',
+        });
+    </script>
 </body>
 
 </html>

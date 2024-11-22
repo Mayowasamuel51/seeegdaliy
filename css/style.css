@@ -31,6 +31,7 @@
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 /* fonts color */
@@ -373,6 +374,7 @@ header {
 .landing-section h1 {
     font-size: 105.04px;
     line-height: 87.34px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .landing-section p {
@@ -398,6 +400,10 @@ section.journey h1 {
     font-size: 100px;
 }
 
+section.journey p {
+    font-size: 25px;
+}
+
 section.journey>div {
     color: white;
     background-color: #000011;
@@ -417,6 +423,8 @@ section.journey button {
     width: fit-content;
 }
 
+
+
 .book-slider p {
     width: 320px;
     margin: 0 auto;
@@ -427,23 +435,19 @@ section.journey button {
     width: fit-content;
 }
 
-.book-slider>div:first-child,
-.book-slider>div:nth-child(5) {
+.book-1 {
     background-color: black;
 }
 
-.book-slider>div:nth-child(2),
-.book-slider>div:nth-child(6) {
+.book-2 {
     background-color: #522989;
 }
 
-.book-slider>div:nth-child(3),
-.book-slider>div:nth-child(7) {
+.book-3 {
     background-color: var(--bs-btnyellow);
 }
 
-.book-slider>div:nth-child(4),
-.book-slider>div:nth-child(8) {
+.book-4 {
     background-color: #1D9000;
 }
 
@@ -496,7 +500,6 @@ section.subscribe>div:first-child {
     top: -100px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: black;
     width: 80%;
     height: 500px;
 }
@@ -623,6 +626,7 @@ ul.footer-nav li.active {
 #preloader {
     position: fixed;
     inset: 0;
+    width: 100vw;
     z-index: 999999999999999999;
     background: #121212;
     display: flex;
@@ -637,12 +641,21 @@ ul.footer-nav li.active {
 
 /* Hide scrolling while loading */
 .ss-preload {
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 /* Allow scrolling once loaded */
 .ss-loaded {
     overflow: auto;
+}
+
+button {
+    transition: transform 100ms ease-in-out;
+    transform-origin: bottom;
+}
+
+button:hover {
+    transform: scale(1.1);
 }
 
 @media only screen and (max-width: 900px) {
@@ -652,12 +665,21 @@ ul.footer-nav li.active {
         line-height: 50px;
     }
 
+    .landing-section p {
+        font-size: 20.36px;
+        line-height: 36.28px;
+    }
+
     section.resources>div:last-child {
         width: 90%;
     }
 
     section.journey h1 {
         font-size: 50px;
+    }
+
+    section.journey p {
+        font-size: 20px;
     }
 
     section.focus-area h1 {
@@ -689,7 +711,7 @@ ul.footer-nav li.active {
 
     section.subscribe {
         position: relative;
-        padding: 500px 25px 100px 25px;
+        padding: 250px 25px 100px 25px;
         background-color: var(--bs-btnyellow);
     }
 
@@ -697,6 +719,10 @@ ul.footer-nav li.active {
         font-size: 50px;
         line-height: 50px;
         color: #010122;
+    }
+    section.subscribe>div:first-child {
+        width: 95%;
+        height: 300px;
     }
 
     section.subscribe>div:last-child p {
@@ -722,7 +748,6 @@ ul.footer-nav li.active {
         font-size: 20px;
         line-height: 30px;
     }
-
 
     section.author>div>div:last-child h1 {
         font-size: 100px;
@@ -754,5 +779,11 @@ ul.footer-nav li.active {
     section.author>div>div:last-child>p:nth-child(3) {
         font-size: 20px;
         line-height: 30px;
+    }
+    .author-img img {
+        width: 100%;
+    }
+    footer {
+        padding: 20px;
     }
 }
